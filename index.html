@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>임준 | Developer Portfolio</title>
+<style>
+  :root{
+    --navy:#0b2545;
+    --navy-deep:#081b34;
+    --accent:#2f6fed;
+    --bg:#f4f6f9;
+    --card:#ffffff;
+    --text:#1c2733;
+    --muted:#5b6b7c;
+    --border:#e3e8ef;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Pretendard","Segoe UI",-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  .hero{
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+    color:#fff;
+    padding:64px 24px 56px;
+  }
+  .hero-inner{
+    max-width:880px;
+    margin:0 auto;
+  }
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:#9fb4d8;
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(28px,5vw,42px);
+    margin:0 0 10px;
+    font-weight:800;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    font-size:17px;
+    color:#c7d6ee;
+    margin:0 0 28px;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:32px;
+  }
+  .pill{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.18);
+    padding:7px 14px;
+    border-radius:999px;
+    font-size:13.5px;
+    color:#e7edf6;
+  }
+  .pill a{color:inherit;text-decoration:none;}
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--accent);
+    color:#fff;
+    text-decoration:none;
+    padding:14px 26px;
+    border-radius:10px;
+    font-weight:700;
+    font-size:15.5px;
+    box-shadow:0 8px 24px rgba(47,111,237,.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 28px rgba(47,111,237,.45);
+  }
+  .cta svg{width:18px;height:18px;flex-shrink:0;}
+  .filesize{
+    color:#9fb4d8;
+    font-size:13px;
+    margin-top:10px;
+  }
+
+  main{
+    max-width:880px;
+    margin:0 auto;
+    padding:48px 24px 80px;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin-bottom:40px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px;
+  }
+  .card h3{
+    margin:0 0 8px;
+    font-size:14px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+  .card p{
+    margin:0;
+    font-size:15px;
+    font-weight:600;
+  }
+
+  section{margin-bottom:36px;}
+  section h2{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    color:var(--accent);
+    margin:0 0 14px;
+    font-weight:800;
+  }
+  .stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tag{
+    background:#eef2fb;
+    color:var(--navy);
+    border-radius:8px;
+    padding:6px 12px;
+    font-size:13.5px;
+    font-weight:600;
+  }
+  ul.plain{
+    margin:0;
+    padding-left:20px;
+  }
+  ul.plain li{
+    margin-bottom:6px;
+    font-size:15px;
+  }
+
+  footer{
+    text-align:center;
+    padding:28px 24px 40px;
+    color:var(--muted);
+    font-size:13px;
+  }
+
+  @media (max-width:640px){
+    .grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Developer Portfolio</div>
+    <h1>임준</h1>
+    <p class="role">GUI / Client S/W Developer — C#·WPF·C++·MFC</p>
+
+    <div class="contact-row">
+      <span class="pill">Tel 010-5757-3450</span>
+      <span class="pill"><a href="mailto:ewak01@naver.com">ewak01@naver.com</a></span>
+      <span class="pill"><a href="https://junworld.tistory.com/" target="_blank" rel="noopener">Blog</a></span>
+    </div>
+
+    <a class="cta" href="./2026포트폴리오_임준(CompactVer).pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      포트폴리오 PDF 다운로드
+    </a>
+    <div class="filesize">PDF 파일 · 경력 및 프로젝트 상세 포함</div>
+  </div>
+</div>
+
+<main>
+  <div class="grid">
+    <div class="card">
+      <h3>Experience</h3>
+      <p>원익PNE · 2024.01–2026.01<br>영우DSP · 2021.06–2022.04</p>
+    </div>
+    <div class="card">
+      <h3>Focus</h3>
+      <p>충방전 솔루션 GUI 개발<br>WPF / MFC 클라이언트</p>
+    </div>
+    <div class="card">
+      <h3>Certification</h3>
+      <p>정보처리기사 · SQLD</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p>2차전지 충방전(Formation) 공정 운영 프로그램을 중심으로 GUI 클라이언트를 개발해 온 소프트웨어 엔지니어입니다.
+    SK ON, 에너테크 등 고객사 대응 프로젝트에서 기능 개발부터 다국어 환경 구축, 소켓통신, DB 연동, 트러블슈팅까지 담당했습니다.</p>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <div class="stack">
+      <span class="tag">C#</span>
+      <span class="tag">C/C++</span>
+      <span class="tag">Python</span>
+      <span class="tag">WPF</span>
+      <span class="tag">MFC / Winform</span>
+      <span class="tag">MVVM</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">AWS</span>
+      <span class="tag">소켓통신</span>
+      <span class="tag">OpenCV</span>
+      <span class="tag">ROS</span>
+      <span class="tag">Git</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Projects</h2>
+    <ul class="plain">
+      <li>에너테크 충주 충방전 PPC / 수동 충방전 Formation 프로그램 개발 (WPF, MySQL, MVVM)</li>
+      <li>SK ON 서산 Formation 솔루션 기능 추가 개발 (MFC, MDB)</li>
+      <li>에너테크 러시아 충방전 통합 프로젝트</li>
+      <li>사내 계측기 테스트 프로그램 / FTP Client 데이터 다운 프로그램 (1인 개발)</li>
+      <li>Investmentor AI — AI 기반 투자 코칭 서비스 (전국민 AI경진대회 우수상)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>더 자세한 내용</h2>
+    <p>담당 역할, 트러블슈팅 사례, 기술적 의사결정 등 상세 내용은 상단의 PDF 포트폴리오를 참고해 주세요.</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 임준. 본 페이지는 채용 지원 목적의 포트폴리오 안내 페이지입니다.
+</footer>
+
+</body>
+</html>
